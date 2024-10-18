@@ -1,0 +1,234 @@
+{
+  "version": "1.0",
+  "about": {
+    "description": "Generated from a docker compose file for use on Cycle.io.",
+    "version": ""
+  },
+  "containers": {
+    "redis-node-0": {
+      "config": {
+        "network": {
+          "public": "disable",
+          "hostname": "redis-node-0"
+        },
+        "deploy": {
+          "instances": 1
+        },
+        "runtime": {
+          "environment_vars": {
+            "REDIS_PASSWORD": "bitnami",
+            "REDIS_NODES": "redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5"
+          }
+        }
+      },
+      "name": "redis-node-0",
+      "image": {
+        "origin": {
+          "type": "docker-registry",
+          "details": {
+            "url": "docker.io",
+            "target": "bitnami/redis-cluster:7.4"
+          }
+        }
+      },
+      "stateful": true,
+      "volumes": [
+        {
+          "destination": "/bitnami/redis/data",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        }
+      ]
+    },
+    "redis-node-1": {
+      "config": {
+        "network": {
+          "public": "disable",
+          "hostname": "redis-node-1"
+        },
+        "deploy": {
+          "instances": 1
+        },
+        "runtime": {
+          "environment_vars": {
+            "REDIS_PASSWORD": "bitnami",
+            "REDIS_NODES": "redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5"
+          }
+        }
+      },
+      "name": "redis-node-1",
+      "image": {
+        "origin": {
+          "type": "docker-registry",
+          "details": {
+            "url": "docker.io",
+            "target": "bitnami/redis-cluster:7.4"
+          }
+        }
+      },
+      "stateful": true,
+      "volumes": [
+        {
+          "destination": "/bitnami/redis/data",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        }
+      ]
+    },
+    "redis-node-2": {
+      "config": {
+        "network": {
+          "public": "disable",
+          "hostname": "redis-node-2"
+        },
+        "deploy": {
+          "instances": 1
+        },
+        "runtime": {
+          "environment_vars": {
+            "REDIS_PASSWORD": "bitnami",
+            "REDIS_NODES": "redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5"
+          }
+        }
+      },
+      "name": "redis-node-2",
+      "image": {
+        "origin": {
+          "type": "docker-registry",
+          "details": {
+            "url": "docker.io",
+            "target": "bitnami/redis-cluster:7.4"
+          }
+        }
+      },
+      "stateful": true,
+      "volumes": [
+        {
+          "destination": "/bitnami/redis/data",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        }
+      ]
+    },
+    "redis-node-3": {
+      "config": {
+        "network": {
+          "public": "disable",
+          "hostname": "redis-node-3"
+        },
+        "deploy": {
+          "instances": 1
+        },
+        "runtime": {
+          "environment_vars": {
+            "REDIS_PASSWORD": "bitnami",
+            "REDIS_NODES": "redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5"
+          }
+        }
+      },
+      "name": "redis-node-3",
+      "image": {
+        "origin": {
+          "type": "docker-registry",
+          "details": {
+            "url": "docker.io",
+            "target": "bitnami/redis-cluster:7.4"
+          }
+        }
+      },
+      "stateful": true,
+      "volumes": [
+        {
+          "destination": "/bitnami/redis/data",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        }
+      ]
+    },
+    "redis-node-4": {
+      "config": {
+        "network": {
+          "public": "disable",
+          "hostname": "redis-node-4"
+        },
+        "deploy": {
+          "instances": 1
+        },
+        "runtime": {
+          "environment_vars": {
+            "REDIS_PASSWORD": "bitnami",
+            "REDIS_NODES": "redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5"
+          }
+        }
+      },
+      "name": "redis-node-4",
+      "image": {
+        "origin": {
+          "type": "docker-registry",
+          "details": {
+            "url": "docker.io",
+            "target": "bitnami/redis-cluster:7.4"
+          }
+        }
+      },
+      "stateful": true,
+      "volumes": [
+        {
+          "destination": "/bitnami/redis/data",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        }
+      ]
+    },
+    "redis-node-5": {
+      "config": {
+        "network": {
+          "public": "disable",
+          "hostname": "redis-node-5"
+        },
+        "deploy": {
+          "instances": 1
+        },
+        "runtime": {
+          "environment_vars": {
+            "REDIS_PASSWORD": "bitnami",
+            "REDISCLI_AUTH": "bitnami",
+            "REDIS_CLUSTER_REPLICAS": "1",
+            "REDIS_NODES": "redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5",
+            "REDIS_CLUSTER_CREATOR": "yes"
+          }
+        }
+      },
+      "name": "redis-node-5",
+      "image": {
+        "origin": {
+          "type": "docker-registry",
+          "details": {
+            "url": "docker.io",
+            "target": "bitnami/redis-cluster:7.4"
+          }
+        }
+      },
+      "stateful": true,
+      "volumes": [
+        {
+          "destination": "/bitnami/redis/data",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        }
+      ]
+    }
+  }
+}
