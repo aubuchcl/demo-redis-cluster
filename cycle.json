@@ -17,7 +17,8 @@
         "runtime": {
           "environment_vars": {
             "ALLOW_EMPTY_PASSWORD":  "yes",
-            "REDIS_NODES": "node-0 node-1 node-2 node-3 node-4 node-5"
+            "REDIS_NODES": "node-0 node-1 node-2 node-3 node-4 node-5",
+            "REDIS_CLUSTER_SLEEP_BEFORE_DNS_LOOKUP": 30
           }
         }
       },
@@ -54,7 +55,8 @@
         "runtime": {
           "environment_vars": {
             "ALLOW_EMPTY_PASSWORD":  "yes",
-            "REDIS_NODES": "node-0 node-1 node-2 node-3 node-4 node-5"
+            "REDIS_NODES": "node-0 node-1 node-2 node-3 node-4 node-5",
+            "REDIS_CLUSTER_SLEEP_BEFORE_DNS_LOOKUP": 30
           }
         }
       },
@@ -91,7 +93,8 @@
         "runtime": {
           "environment_vars": {
             "ALLOW_EMPTY_PASSWORD":  "yes",
-            "REDIS_NODES": "node-0 node-1 node-2 node-3 node-4 node-5"
+            "REDIS_NODES": "node-0 node-1 node-2 node-3 node-4 node-5",
+            "REDIS_CLUSTER_SLEEP_BEFORE_DNS_LOOKUP": 30
           }
         }
       },
@@ -128,7 +131,8 @@
         "runtime": {
           "environment_vars": {
             "ALLOW_EMPTY_PASSWORD":  "yes",
-            "REDIS_NODES": "node-0 node-1 node-2 node-3 node-4 node-5"
+            "REDIS_NODES": "node-0 node-1 node-2 node-3 node-4 node-5",
+            "REDIS_CLUSTER_SLEEP_BEFORE_DNS_LOOKUP": 30
           }
         }
       },
@@ -165,7 +169,8 @@
         "runtime": {
           "environment_vars": {
             "ALLOW_EMPTY_PASSWORD":  "yes",
-            "REDIS_NODES": "node-0 node-1 node-2 node-3 node-4 node-5"
+            "REDIS_NODES": "node-0 node-1 node-2 node-3 node-4 node-5",
+            "REDIS_CLUSTER_SLEEP_BEFORE_DNS_LOOKUP": 30
           }
         }
       },
@@ -202,7 +207,8 @@
         "runtime": {
           "environment_vars": {
             "ALLOW_EMPTY_PASSWORD":  "yes",
-            "REDIS_NODES": "node-0 node-1 node-2 node-3 node-4 node-5"
+            "REDIS_NODES": "node-0 node-1 node-2 node-3 node-4 node-5",
+            "REDIS_CLUSTER_SLEEP_BEFORE_DNS_LOOKUP": 30
           }
         }
       },
