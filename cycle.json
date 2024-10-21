@@ -5,19 +5,19 @@
     "version": ""
   },
   "containers": {
-    "redis-node-0": {
+    "node-0": {
       "config": {
         "network": {
           "public": "disable",
-          "hostname": "redis-node-0"
+          "hostname": "node-0"
         },
         "deploy": {
           "instances": 1
         },
         "runtime": {
           "environment_vars": {
-            "REDIS_PASSWORD": "bitnami",
-            "REDIS_NODES": "redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5"
+            "ALLOW_EMPTY_PASSWORD":  yes,
+            "REDIS_NODES": "node-0 node-1 node-2 node-3 node-4 node-5"
           }
         }
       },
@@ -27,7 +27,7 @@
           "type": "docker-registry",
           "details": {
             "url": "docker.io",
-            "target": "bitnami/redis-cluster:7.4"
+            "target": "bitnami/redis-cluster:latest"
           }
         }
       },
@@ -42,19 +42,19 @@
         }
       ]
     },
-    "redis-node-1": {
+    "node-1": {
       "config": {
         "network": {
           "public": "disable",
-          "hostname": "redis-node-1"
+          "hostname": "node-1"
         },
         "deploy": {
           "instances": 1
         },
         "runtime": {
           "environment_vars": {
-            "REDIS_PASSWORD": "bitnami",
-            "REDIS_NODES": "redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5"
+            "ALLOW_EMPTY_PASSWORD":  yes,
+            "REDIS_NODES": "node-0 node-1 node-2 node-3 node-4 node-5"
           }
         }
       },
@@ -64,7 +64,7 @@
           "type": "docker-registry",
           "details": {
             "url": "docker.io",
-            "target": "bitnami/redis-cluster:7.4"
+            "target": "bitnami/redis-cluster:latest"
           }
         }
       },
@@ -79,19 +79,19 @@
         }
       ]
     },
-    "redis-node-2": {
+    "node-2": {
       "config": {
         "network": {
           "public": "disable",
-          "hostname": "redis-node-2"
+          "hostname": "node-2"
         },
         "deploy": {
           "instances": 1
         },
         "runtime": {
           "environment_vars": {
-            "REDIS_PASSWORD": "bitnami",
-            "REDIS_NODES": "redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5"
+            "ALLOW_EMPTY_PASSWORD":  yes,
+            "REDIS_NODES": "node-0 node-1 node-2 node-3 node-4 node-5"
           }
         }
       },
@@ -101,7 +101,7 @@
           "type": "docker-registry",
           "details": {
             "url": "docker.io",
-            "target": "bitnami/redis-cluster:7.4"
+            "target": "bitnami/redis-cluster:latest"
           }
         }
       },
@@ -116,19 +116,19 @@
         }
       ]
     },
-    "redis-node-3": {
+    "node-3": {
       "config": {
         "network": {
           "public": "disable",
-          "hostname": "redis-node-3"
+          "hostname": "node-3"
         },
         "deploy": {
           "instances": 1
         },
         "runtime": {
           "environment_vars": {
-            "REDIS_PASSWORD": "bitnami",
-            "REDIS_NODES": "redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5"
+            "ALLOW_EMPTY_PASSWORD":  yes,
+            "REDIS_NODES": "node-0 node-1 node-2 node-3 node-4 node-5"
           }
         }
       },
@@ -138,7 +138,7 @@
           "type": "docker-registry",
           "details": {
             "url": "docker.io",
-            "target": "bitnami/redis-cluster:7.4"
+            "target": "bitnami/redis-cluster:latest"
           }
         }
       },
@@ -153,19 +153,19 @@
         }
       ]
     },
-    "redis-node-4": {
+    "node-4": {
       "config": {
         "network": {
           "public": "disable",
-          "hostname": "redis-node-4"
+          "hostname": "node-4"
         },
         "deploy": {
           "instances": 1
         },
         "runtime": {
           "environment_vars": {
-            "REDIS_PASSWORD": "bitnami",
-            "REDIS_NODES": "redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5"
+            "ALLOW_EMPTY_PASSWORD":  yes,
+            "REDIS_NODES": "node-0 node-1 node-2 node-3 node-4 node-5"
           }
         }
       },
@@ -175,7 +175,7 @@
           "type": "docker-registry",
           "details": {
             "url": "docker.io",
-            "target": "bitnami/redis-cluster:7.4"
+            "target": "bitnami/redis-cluster:latest"
           }
         }
       },
@@ -190,22 +190,19 @@
         }
       ]
     },
-    "redis-node-5": {
+    "node-5": {
       "config": {
         "network": {
           "public": "disable",
-          "hostname": "redis-node-5"
+          "hostname": "node-5"
         },
         "deploy": {
           "instances": 1
         },
         "runtime": {
           "environment_vars": {
-            "REDIS_PASSWORD": "bitnami",
-            "REDISCLI_AUTH": "bitnami",
-            "REDIS_CLUSTER_REPLICAS": "1",
-            "REDIS_NODES": "redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5",
-            "REDIS_CLUSTER_CREATOR": "yes"
+            "ALLOW_EMPTY_PASSWORD":  yes,
+            "REDIS_NODES": "node-0 node-1 node-2 node-3 node-4 node-5"
           }
         }
       },
@@ -215,7 +212,7 @@
           "type": "docker-registry",
           "details": {
             "url": "docker.io",
-            "target": "bitnami/redis-cluster:7.4"
+            "target": "bitnami/redis-cluster:latest"
           }
         }
       },
