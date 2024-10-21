@@ -10,6 +10,7 @@
         "network": {
           "public": "disable",
           "hostname": "node-0"
+          "ports": ["6379:6379", "16379:16379"]
         },
         "deploy": {
           "instances": 1
@@ -47,7 +48,8 @@
       "config": {
         "network": {
           "public": "disable",
-          "hostname": "node-1"
+          "hostname": "node-1",
+          "ports": ["6379:6379", "16379:16379"]
         },
         "deploy": {
           "instances": 1
@@ -85,7 +87,8 @@
       "config": {
         "network": {
           "public": "disable",
-          "hostname": "node-2"
+          "hostname": "node-2",
+          "ports": ["6379:6379", "16379:16379"]
         },
         "deploy": {
           "instances": 1
@@ -123,7 +126,8 @@
       "config": {
         "network": {
           "public": "disable",
-          "hostname": "node-3"
+          "hostname": "node-3",
+          "ports": ["6379:6379", "16379:16379"]
         },
         "deploy": {
           "instances": 1
@@ -161,7 +165,8 @@
       "config": {
         "network": {
           "public": "disable",
-          "hostname": "node-4"
+          "hostname": "node-4",
+          "ports": ["6379:6379", "16379:16379"]
         },
         "deploy": {
           "instances": 1
@@ -199,7 +204,8 @@
       "config": {
         "network": {
           "public": "disable",
-          "hostname": "node-5"
+          "hostname": "node-5",
+          "ports": ["6379:6379", "16379:16379"]
         },
         "deploy": {
           "instances": 1
